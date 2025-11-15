@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      pages: write
       contents: write
+      pages: write
+      workflows: write
 
     steps:
       - name: checkout repo content
@@ -48,5 +49,5 @@ jobs:
           skip_dirty_check: true
 
           skip_fetch: true
-          
+
           push_options: ''
